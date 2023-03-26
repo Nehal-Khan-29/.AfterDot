@@ -1,0 +1,7 @@
+create database afterdot;
+
+use afterdot;
+
+create table points (sno int,func varchar(50),points int);
+
+insert into points values(1,"word to pdf",0),(2,"pdf to word",0) ,(3,"png to jpg",0) ,(4,"jpg to png",0) ,(5,"pdf to jpg",0) ,(6,"jpg to pdf",0) ,(7,"pdf merger",0),(8,"pdf to text",0),(9,"pdf to word 2",0);
