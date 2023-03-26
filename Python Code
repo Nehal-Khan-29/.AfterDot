@@ -42,11 +42,24 @@ def homeclose():
     if messagebox.askokcancel('Quit','Do you want to logout and quit?'):
         home.destroy()
         quit()
+        
+# icon window
 
-def logclose():
-    if messagebox.askokcancel('Quit','Do you want to quit?'):
-        logwin.destroy()
-        quit()
+window = tk.Tk()
+image = Image.open("E:\\NK programs\\Python\\python save\\AfterDot\\icon.png")
+tk_image = ImageTk.PhotoImage(image)
+image_label = tk.Label(window, image=tk_image)
+image_label.pack()
+window.update()
+screen_width = window.winfo_screenwidth()
+screen_height = window.winfo_screenheight()
+window_width = window.winfo_width()
+window_height = window.winfo_height()
+x = int((screen_width - window_width) / 2)
+y = int((screen_height - window_height) / 2)
+window.geometry("+{}+{}".format(x, y))
+window.after(2000)
+window.destroy()
 
 #pdf to text:
 
