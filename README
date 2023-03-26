@@ -6,4 +6,6 @@ Before Running the code Make sure to create the given Mysql Database and table.
 Edit the main program by changing Your Mysql Password.
 Change the directory of the image at line 49,356,391,418
 
+IMPORTANT:
+Make sure that the required modules have been download in your computer
 
