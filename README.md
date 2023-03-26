@@ -4,6 +4,6 @@ The .AfterDot program converts the following: word to pdf , pdf to word , pdf to
 NOTE: 
 Before Running the code Make sure to create the given Mysql Database and table.
 Edit the main program by changing Your Mysql Password.
-Change the directory of the image at
+Change the directory of the image at line 342,377,404
 
 
