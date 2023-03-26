@@ -158,14 +158,6 @@ def wordtopdf():
     mydb.commit()
 
 
-    def completed():   
-        Label(home,text=('''      
-            '''),font=('Arial',12),bg='Lightgreen',borderwidth=0,relief='solid').place(x=1030,rely=0.85)    
-        Label(home,text=('''      
-            '''),font=('Arial',12),bg='red',borderwidth=0,relief='solid').place(x=1080,rely=0.85)    
-    completed()
-
-
 
 # PDF To Word Page:
 
