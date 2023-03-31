@@ -1,8 +1,8 @@
 '''
 project done by 
-NEHAL KHAN
-SRIDHARAN
-ATHISH VISHNU
+NEHAL KHAN - Individual developer of the project from the core
+SRIDHARAN - supporter
+ATHISH VISHNU - supporter
 '''
 
 import tkinter as tk
@@ -390,7 +390,8 @@ def aboutpage():
     Button(about,text='Contact Us',font=('Arial',20),command=help,height=1,width=16,bg='white',
     fg='gray6',activebackground='Skyblue',activeforeground='thistle1').place(x=750,y=500)
 
-    Label(about,text=('''This program is created on 25 March 2023 by Nehal Khan, Sridharan, Athish Vishnu.'''),font=('Arial',15),bg='white').place(x=250,y=200)
+    Label(about,text=('''This program is created on 25 March 2023 by Nehal Khan
+     and supported by Sridharan, Athish Vishnu.'''),font=('Arial',15),bg='white').place(x=250,y=200)
 
 
     about.mainloop()
