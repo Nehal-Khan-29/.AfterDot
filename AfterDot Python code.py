@@ -80,7 +80,7 @@ def pdftotxt():
     
     
     
-    
+    After complition of my project, I will share the missing parts of the code (for copyrights purpose)
     
     
     
@@ -114,7 +114,7 @@ def pdftoword2():
     
     
     
-    
+    After complition of my project, I will share the missing parts of the code (for copyrights purpose)
     
     
     
@@ -209,34 +209,34 @@ def jpgtopdf():
     mydb.commit()
 
 # PDF To JPG Page:
-
+'''
 def pdftojpg():
 
-    filetype=('pdf files','*.pdf'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ After complition of my project, I will share the missing parts of the code (for copyrights purpose)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
-    z=a[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-
-    doc = aw.Document(z)
-            
-    for page in range(0, doc.page_count):
-        extractedPage = doc.extract_pages(page, 1)
-        extractedPage.save(f"{z+str(page+1)}.jpg")
-
-    query1="select points from points where sno={}".format(5)
-    mycur=mydb.cursor()
-    mycur.execute(query1)
-    row=mycur.fetchone()
-    mydb.commit()
-    query="update points set points={} where sno={}".format(row[0]+1,5)
-    mycur=mydb.cursor()
-    mycur.execute(query)
-    mydb.commit()
-
-
+'''
 # 2xPDF TO PDF
 
 def pdftopdf():
@@ -277,7 +277,7 @@ def pdftopdf():
 
 
 
-
+After complition of my project, I will share the missing parts of the code (for copyrights purpose)
 
 
 
@@ -435,8 +435,8 @@ Label(home,text=("Only borderless pdf"),font=('Arial',16),bg='white',fg="blue").
 Button(home,text='About Us',font=('Arial',20,),command=aboutpage,height=1,width=16,bg='blue',
        fg='white',activebackground='Skyblue',activeforeground='thistle1').place(x=650,y=580)
        
-Button(home,text='PNG -> JPG',font=('Arial',20),command=pngtojpg,height=1,width=16,bg='white',
-       fg='gray6',activebackground='Skyblue',activeforeground='thistle1').place(x=1030,y=220)
+#Button(home,text='PNG -> JPG',font=('Arial',20),command=pngtojpg,height=1,width=16,bg='white',
+       #fg='gray6',activebackground='Skyblue',activeforeground='thistle1').place(x=1030,y=220)
 Button(home,text='JPG -> PNG',font=('Arial',20),command=jpgtopng,height=1,width=16,bg='white',
        fg='gray6',activebackground='Skyblue',activeforeground='thistle1').place(x=1030,y=340)
 Button(home,text='Logout',font=('Arial',20),command=homelogout,height=1,width=16,bg='lightgreen',
