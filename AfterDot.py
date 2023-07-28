@@ -44,59 +44,7 @@ def homeclose():
         home.destroy()
         quit()
 
-'''def logclose():
-    if messagebox.askokcancel('Quit','Do you want to quit?'):
-        logwin.destroy()
-        quit()
 
-
-# Login System:
-
-def login():
-
-    global username, password
-
-    username=entry1.get()
-    password=entry2.get()
-
-    if (username==''or password==''):
-        messagebox.showinfo('Error','Please fill the username and password')
-    elif (username=='.' and password=='.'):
-        messagebox.showinfo('Logged in','Logged in successfully')
-        logwin.destroy()
-    else:
-        messagebox.showinfo('Error','Incorrect Username or Password - Try Again')
-
-# Login Page:
-
-logwin=tk.Tk()
-logwin.title('AfterDot - LOGIN')
-logwin.geometry('400x120')
-logwin.resizable(False,False)
-logwin.protocol('WM_DELETE_WINDOW',logclose)
-
-logwinpic=ImageTk.PhotoImage(Image.open("E:\\NK programs\\Python\\python save\\AfterDot\\afterdot login 2.png"))
-logwinpanel=Label(logwin,image=logwinpic)
-logwinpanel.pack(side='top',fill='both',expand='yes')
-
-Label(logwin,text='USERNAME :',bg='white',font=('Arial',12),borderwidth=0,relief='solid').place(x=80,y=24)
-Label(logwin,text='PASSWORD:',bg='white',font=('Arial',12),borderwidth=0,relief='solid').place(x=80,y=54)
-
-global entry1,entry2
-
-entry1=Entry(logwin)
-entry1.place(x=200,y=25)
-entry1.config(borderwidth=2,relief='sunken')
-
-entry2=Entry(logwin)
-entry2.place(x=200,y=55)
-entry2.config(borderwidth=2,relief='sunken')
-entry2.config(show='*')
-
-Button(logwin,text='Login',command=login,height=1,width=10).place(x=220,y=85)
-
-logwin.mainloop() 
-'''
 
 
 
@@ -119,21 +67,6 @@ y = int((screen_height - window_height) / 2)
 icon.geometry("+{}+{}".format(x, y))
 icon.after(2000, icon.destroy)
 icon.mainloop()
-
-
-
-
-#replace:
-'''
-def replace():
-              
-        with open(txt_filepath, 'rb') as file:          
-            file_contents = file.read()
-        new_contents = file_contents.decode('utf-8').replace('apple', 'Nehal')
-        with open(txt_filepath, 'w') as file:
-            file.write(new_contents)'''
-
-
 
 
 
