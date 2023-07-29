@@ -7,5 +7,3 @@ Change the directory of the image
 Make sure that the required modules have been download in your computer
 DOWNLOAD TESSERACT OCR AND POPPLER
 
-# Note 2 :
-After complition of my project, I will share the missing parts of the code (for copyrights purpose)
