@@ -311,26 +311,7 @@ def jpgtopdf():
 
 #multiple jpd to pdf
 def multijpgtopdf():
-    filetype=('jpg files','*.jpg'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    for i in range(len(a)):
-        z=a[i]
-        b=z[-5:-len(z)-1:-1]
-        c=b[-1:-len(b)-1:-1]
-        image = Image.open(z,'r')
-        im1 = image.convert('RGB')
-        im1.save(f"{c}.pdf")
-    
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 8
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
+    print()
 
 
 
@@ -370,60 +351,13 @@ def pdftopdf():
 
 #multiple pdf merger
 def multipdf():
-    filetype=('pdf files','*.pdf'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-    merger=PdfMerger()
-
-    z=a[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-    
-
-    '''for i in range(len(a)):
-        z=a[i]
-        merger.append(z)'''
-
-    for file in filepath:
-        merger.append(file)
-
-    merger.write(c+" merged.pdf")
-    merger.close()
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 6
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
+    print()
 
 
 # PNG TO JPG
 
 def pngtojpg():
-    filetype=('png files','*.png'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    z=a[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-    
-    image = Image.open(z,'r')
-    im1 = image.convert('RGB')
-    im1.save(f"{c}.jpg")
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 10
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
-
+    print()
 
 
 
@@ -431,26 +365,7 @@ def pngtojpg():
 # multi PNG TO JPG
 
 def multipngtojpg():
-    filetype=('png files','*.png'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    for i in range(len(a)):
-        z=a[i]
-        b=z[-5:-len(z)-1:-1]
-        c=b[-1:-len(b)-1:-1]
-        image = Image.open(z,'r')
-        im1 = image.convert('RGB')
-        im1.save(f"{c}.jpg")
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 10
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
+    print()
 
 
 
@@ -462,26 +377,7 @@ def multipngtojpg():
 # JPG TO PNG
 
 def jpgtopng():
-    filetype=('jpg files','*.jpg'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    z=a[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-    
-    image = Image.open(z,'r')
-    im1 = image.convert('RGB')
-    im1.save(f"{c}.png")
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 9
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
+    print()
 
 
 
@@ -489,58 +385,13 @@ def jpgtopng():
 #multi jpg to png
 
 def multijpgtopng():
-    filetype=('jpg files','*.jpg'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    for i in range(len(a)):
-        z=a[i]
-        b=z[-5:-len(z)-1:-1]
-        c=b[-1:-len(b)-1:-1]
-        image = Image.open(z,'r')
-        im1 = image.convert('RGB')
-        im1.save(f"{c}.png")
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 9
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
-
+    print()
 
 
 #image to txt
 
 def imgtotxt():
-    
-    tes()
-
-    filetypes = [('Image files', '*.png;*.jpg;*.jpeg'), ('All files', '*.*')]
-    filepaths = fd.askopenfilenames(filetypes=filetypes)
-    filepath = filepaths[0]
-
-
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    img = Image.open(filepath)
-    text = pytesseract.image_to_string(img)
-
-    filename_without_ext = os.path.splitext(os.path.basename(filepath))[0]
-    txt_filepath = os.path.join(os.path.dirname(filepath), f"{filename_without_ext}.txt")
-    with open(txt_filepath, 'w', encoding='utf-8') as txt_file:
-        txt_file.write(text)
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 11
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
-
+    print()
 
 
 
