@@ -249,29 +249,7 @@ def pdftotxt():
 # PDF To JPG Page:
 
 def pdftojpg():
-
-    filetype=('pdf files','*.pdf'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    z=a[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 7
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
-
-    
-    images = convert_from_path(f"{z}",500,poppler_path=r'E:\NK programs\Python\python save\AfterDot\poppler-23.01.0\Library\bin')
-    
-    for i in range(len(images)):
-	    images[i].save(f"{c}"+' page'+ str(i+1) +'.jpg', 'JPEG')
+    print()
             
     
 
@@ -354,10 +332,15 @@ def multipdf():
     print()
 
 
+
+
+
 # PNG TO JPG
 
 def pngtojpg():
     print()
+
+
 
 
 
@@ -371,9 +354,6 @@ def multipngtojpg():
 
 
 
-
-
-
 # JPG TO PNG
 
 def jpgtopng():
@@ -382,10 +362,14 @@ def jpgtopng():
 
 
 
+
 #multi jpg to png
 
 def multijpgtopng():
     print()
+
+
+
 
 
 #image to txt
