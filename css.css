@@ -110,7 +110,7 @@ z-index: -1;
   border-radius: 10px;
   color: white;
   padding: 20px;
-  width: 600px;
+  min-width: 600px;
   height: auto;
   background-color: rgb(124, 63, 247);
   border: 5px solid white;
