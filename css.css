@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Sofia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Comic Sans MS", cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: auto;
+}
+
+
+
+
+/*-----------------------------------------------------------------------front bag----------------------------------------------------------*/
+
+.front{
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom:50px; 
+}
+
+
+#frontbg {
+position: fixed;
+background-color: white;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+.afterdotlogo{
+  height:100px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+
+.typing2{
+  
+  font-size: 72px;
+  color: rgba(124, 63, 247);
+}
+
+
+.typing1{
+  
+  top: 50px;
+  color: greenyellow;
+  margin-top: 10px;
+  font-size: 28px;
+  background-color: rgb(0, 0, 0, 0);
+  border-radius: 30px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right:15px;
+  
+}
+
+.front2{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+.downl{
+  font-family: "Comic Sans MS", cursive;
+
+  
+  font-size: 28px;
+  background-color: rgb(171, 255, 46);
+  border-radius: 30px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right:15px;
+  transition: 0.25s ease-in-out;
+}
+
+.downl a{
+  color: rgb(0, 0, 0);
+}
+
+.downl a:hover{
+  color: white;
+
+}
+
+.downl:hover{
+  background-color: rgb(124, 63, 247);
+  transition: 0.25s ease-in-out;
+}
+
+#text-container{
+  height: fit-content;
+  font-size: large;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: rgb(124, 63, 247);
+  border: 5px solid white;
+}
+
+
+/*---------------------------------------------------------------------work---------------------------------------------------------------*/
+
+.allworks{
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom:50px; 
+}
+
+#workbox {
+  border-radius: 10px;
+  width: auto; 
+  height: 250px; 
+  object-fit:contain;
+}
+
+.allworks li{
+  display: inline;
+  list-style: none;
+  padding: 20px;
+}
+
+
+
+/*---------------------------------------------------------------------contact---------------------------------------------------------------*/
+
+.probtext{
+  font-family: "Comic Sans MS", cursive;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: black;
+  color: greenyellow;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right:15px;
+  border-radius: 30px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom:50px; 
+}
+
+.contact-form {
+  border-collapse: separate;
+  border-spacing: 50px 20px; 
+}
+
+.form-group-title{ 
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+  text-align: center;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:greenyellow;
+  border: 2px solid black;
+  color: black;
+  font-size: larger;
+  font-weight: 900;
+  margin-top: 3px;
+}
+
+
+input,textarea{
+  font-family: "Comic Sans MS", cursive;
+  border-radius: 30px;
+  border: 0px;
+  padding-left:20px ;
+  height: 40px;
+  font-size: larger;
+  color: white;
+  background-color: rgb(124, 63, 247,0.5);
+  font-weight: 900;
+  width: 500px;
+}
+
+textarea{
+  height:150px;
+  padding-top: 10px;
+}
+
+
+.btn-md{
+  font-family: "Comic Sans MS", cursive;
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: larger;
+  font-weight: 900;
+  margin-left: 300px;
+  border: black;
+  color: greenyellow;
+  background-color: black;
+  transition: 0.25s ease-in-out;
+}
+
+.btn-md:hover{
+  font-family: "Comic Sans MS", cursive;
+  background-color:greenyellow;
+  border: 2px solid black;
+  color: black;
+  transition: 0.25s ease-in-out;
+}
+
+
+
+
+
+.contactcontainer3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(124, 63, 247);
+  margin-bottom: 0;
+  width: 100%;
+  height: 200px;
+  font-weight: bolder;
+}
+
+.copyright{
+  text-align: center;
+  color: white;
+}
+
+
+
+.logos{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.logos li{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.github,.linkedin, .insta{
+  border-radius: 100%;
+  width:30px;
+  transition: 1s ease;
+}
+
+
+.logos a::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.logos li:hover .git::before {
+  content: "Github"; 
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+  opacity: 1;
+  visibility: visible;
+}
+
+.logos li:hover .ins::before {
+  content: "Instagram"; 
+  border: 3px solid white;
+  background-color: rgb(179, 0, 255);
+  color: white;
+  opacity: 1;
+  visibility: visible;
+}
+
+.logos li:hover .lin::before {
+  content: "Linkedin"; 
+  border: 3px solid white;
+  background-color:rgb(0, 114, 177) ;
+  color: white;
+  opacity: 1;
+  visibility: visible;
+}
