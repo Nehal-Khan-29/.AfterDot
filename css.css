@@ -105,12 +105,13 @@ z-index: -1;
 }
 
 #text-container{
-  height: fit-content;
+  
   font-size: large;
   border-radius: 10px;
   color: white;
   padding: 20px;
-  width: 500px;
+  width: 600px;
+  height: auto;
   background-color: rgb(124, 63, 247);
   border: 5px solid white;
 }
