@@ -9,8 +9,5 @@ The .AfterDot program converts the following:
 - png to jpg
 - pdf merger
 
-# IMPORTANT:
-DOWNLOAD TESSERACT OCR AND POPPLER
-
 # Try here:
 https://nehal-khan-29.github.io/.AfterDot/
