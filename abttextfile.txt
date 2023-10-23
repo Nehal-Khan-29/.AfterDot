@@ -1,17 +1,17 @@
-Hello and welcome to AfterDote,
-Your premier platform for file convertions
+Hello and welcome to AfterDot,
+Your premier platform for file conversions
 
-<b>Why AfterDot? </b>
+<b>Why AfterDot?</b>
 
->>> Safe (cause its offline)
+>>> Safe (cause it's offline)
 >>> Free of cost
 
-Yo! What else do you want
+<i><b>Yo! What else do you want</b></i>
 
 <b>What does AfterDot do? </b>
 
->>> Word   -->    Pdf
->>> Pdf    -->    Word
+>>> Docx   -->    Pdf
+>>> Pdf    -->    Docx
 >>> Pdf    -->    Text
 >>> Pdf    -->    Jpg
 >>> Jpg    -->    Pdf
