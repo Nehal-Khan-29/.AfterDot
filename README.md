@@ -1,6 +1,7 @@
 # .AfterDot
 The .AfterDot program converts the following: 
 - word to pdf
+- word merger
 - pdf to word
 - pdf to text
 - pdf to jpg
