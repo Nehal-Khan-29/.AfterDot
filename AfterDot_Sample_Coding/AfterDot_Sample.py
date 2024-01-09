@@ -135,25 +135,7 @@ def wordtopdf():
 # PDF To Word Page:
 
 def pdftoword():
-    filetype=('pdf files','*.pdf'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    z=a[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-
-    #parse(f"{c}.pdf",f"{c}.docx")
-    pdf2docx.parse(f"{c}.pdf", f"{c}.docx", headers=True, footers=True)
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 3
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
+    print()
 
 
 
@@ -163,27 +145,7 @@ def pdftoword():
 # Pdf to word 2:
 
 def pdftoword2():
-    pdf_filepath = fd.askopenfilename(filetypes=(('PDF files', '*.pdf'), ('All files', '*.*')))
-
-    with open(pdf_filepath, 'rb') as pdf_file:
-        pdf_reader = PyPDF2.PdfReader(pdf_file)
-        pdf_text = ''
-        for page in range(len(pdf_reader.pages)):
-            pdf_text += pdf_reader.pages[page].extract_text()
-
-    doc = docx.Document()
-    doc.add_paragraph(pdf_text)
-    docx_filepath = pdf_filepath.replace('.pdf', '.docx')
-    doc.save(docx_filepath)
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 4
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
+    print()
 
   
 
@@ -193,56 +155,7 @@ def pdftoword2():
 #pdf to text:
 
 def pdftotxt():
-    root = tk.Tk()
-    root.withdraw()
-
-    filetypes = [('PDF files', '*.pdf'), ('All files', '*.*')]
-    filepaths = fd.askopenfilenames(filetypes=filetypes)
-
-    if len(filepaths) > 0:
-        filepath = filepaths[0]
-
-        with open(filepath, 'rb') as pdf_file:
-
-            pdf_reader = PyPDF2.PdfReader(pdf_file)
-            num_pages = len(pdf_reader.pages)
-            text = ""
-
-            for i in range(num_pages):
-                page = pdf_reader.pages[i]
-                text += page.extract_text()
-
-       
-
-        filename_without_ext = os.path.splitext(os.path.basename(filepath))[0]
-
-        txt_filepath = os.path.join(os.path.dirname(filepath), f"{filename_without_ext}.txt")
-        with open(txt_filepath, 'w', encoding='utf-8') as txt_file:
-            txt_file.write(text)
-
-        '''
-        with open(txt_filepath, 'rb') as file:          
-            file_contents = file.read()
-        new_contents = file_contents.decode('utf-8').replace('apple', 'Nehal')
-        with open(txt_filepath, 'w') as file:
-            file.write(new_contents)'''
-
-        
-
-    else:
-        print("No files selected")
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 5
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
-
-
-
+    print()
 
 
 
@@ -260,28 +173,7 @@ def pdftojpg():
 # JPG To PDF Page:
 
 def jpgtopdf():
-
-    filetype=('jpg files','*.jpg'),('all files','*.*')
-    filepath=fd.askopenfilenames(filetypes=filetype)
-    a=filepath
-
-    z=a[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-    
-    image = Image.open(z,'r')
-    im1 = image.convert('RGB')
-    im1.save(f"{c}.pdf")
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 8
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
-
+    print()
 
 
 
@@ -299,32 +191,7 @@ def multijpgtopdf():
 # 2xPDF TO PDF
 
 def pdftopdf():
-    filetype1=('pdf files','*.pdf'),('all files','*.*')
-    filepath1=fd.askopenfilenames(filetypes=filetype1)
-    a=filepath1
-    filetype2=('pdf files','*.pdf'),('all files','*.*')
-    filepath2=fd.askopenfilenames(filetypes=filetype2)
-    x=filepath2
-
-    z=a[0]
-    y=x[0]
-    b=z[-5:-len(z)-1:-1]
-    c=b[-1:-len(b)-1:-1]
-
-    merger=PdfMerger()
-    merger.append(z)
-    merger.append(y)
-    merger.write(c+" merged.pdf")
-    merger.close()
-
-    wb = openpyxl.load_workbook(filepathx)
-    sheet = wb.active
-    row_num = 6
-    col_num = 3
-    old_value = sheet.cell(row=row_num, column=col_num).value
-    new_value = old_value +1
-    sheet.cell(row=row_num, column=col_num).value = new_value
-    wb.save(filepathx)
+    print()
 
 
 #multiple pdf merger
@@ -521,15 +388,6 @@ homepanel=Label(home,image=homepic)
 homepanel.pack(side='top',fill='both',expand='yes')
 
 Label(home,text=('Logged in: '+currtime+' - '+currdate),font=('Arial',16),bg='blue',fg="white").place(x=1165,y=80)
-
-
-
-
-'''BLINK_COLOR = "blue"
-def blink_on_enter(event):
-    event.widget.config(bg=BLINK_COLOR)
-Button.bind("<Enter>", blink_on_enter)'''
-
 
 
 # horizontal 1
