@@ -1,0 +1,21 @@
+Hello and welcome to .AfterDot,
+Your premier platform for file convertions
+
+<b>Why AfterDot? </b>
+
+>>> Safe (cause its offline)
+>>> Free of cost
+
+Yo! What else do you want
+
+<b>What does AfterDot do? </b>
+
+>>> Docx   -->    Pdf
+>>> Pdf    -->    Word
+>>> Pdf    -->    Jpg
+>>> Jpg    -->    Pdf
+>>> Jpg    -->    Png
+>>> Png    -->    Jpg
+>>> Img    -->    Text
+>>> Pdf merger
+>>> Docx merger
